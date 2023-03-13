@@ -4,6 +4,8 @@
 <head>
 <title>web1 - html</title>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="colors.js"></script>
 <style>
     body{
         margin: 0;
@@ -51,6 +53,19 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div class="chage"> 
+        <input type="button" value="Night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
+
+        <input type="button" value="Day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        ">
+
+        <input type="button" value="night" onclick="NightDayHandler(this);">
+    </div>
 <div id="grid">
 <div>
     <ol>
